@@ -1,4 +1,4 @@
-<?php
+d<?php
     include("connection.php");
 
     $nom_ = $_POST['nom'];
@@ -17,5 +17,6 @@
     
     $stmt->execute();
 
+    echo "<div class='alert alert-success> you are registered successfully.</div>";
     header("Location: /Artflix/php/login.php");
 ?>

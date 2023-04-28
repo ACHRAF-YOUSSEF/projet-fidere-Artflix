@@ -18,10 +18,16 @@
 
     while ($row=$stmt->fetch()) {
         $stmt->bindColumn("nom", $nom);
+        $stmt->bindColumn("status", $status);
 
-        $_SESSION['nom'] = $nom;
-        $_SESSION['success'] = "You are now logged in";
-
-        header("Location: /Artflix/php/home.php");
+        if ($status === 1) {
+            $_SESSION['nom'] = $nom;
+            $_SESSION['success'] = "You are now logged in";
+    
+            echo "<div class='alert alert-success> you are successfully logged in.</div>";
+            header("Location: /Artflix/php/home.php");
+        } else {
+            header("Location: /Artflix/php/home.php");
+        }
     }
 ?>

@@ -53,14 +53,15 @@
             <div class="wrapper">
                 <i id="left" class="fa-solid fa-angle-left"></i>
                 <div class="carousel">
-                    <img src="/Artflix/images/image1.jpg" alt="img" draggable="false">
+                    <!-- <img src="/Artflix/images/image1.jpg" alt="img" draggable="false">
                     <img src="/Artflix/images/image2.jpg" alt="img" draggable="false">
                     <img src="/Artflix/images/image3.jpg" alt="img" draggable="false">
                     <img src="/Artflix/images/image4.jpg" alt="img" draggable="false">
                     <img src="/Artflix/images/image5.jpg" alt="img" draggable="false">
                     <img src="/Artflix/images/image6.jpg" alt="img" draggable="false">
                     <img src="/Artflix/images/image7.jpg" alt="img" draggable="false">
-                    <img src="/Artflix/images/image8.jpg" alt="img" draggable="false">
+                    <img src="/Artflix/images/image8.jpg" alt="img" draggable="false"> -->
+                    <?php include("../db/get_featured_list.php") ?>
                 </div>
                 <i id="right" class="fa-solid fa-angle-right"></i>
             </div>
@@ -84,7 +85,7 @@
                 </div>
 
                 <div class="photo-gallery">
-                    <div class="pic category-3" onclick="window.location.href='single-product.php?name=image3'">
+                    <!-- <div class="pic category-3" onclick="window.location.href='single-product.php?name=image3'">
                         <img src="/Artflix/images/image3.jpg" alt="picture3">
                     </div>
                     <div class="pic category-3">
@@ -107,7 +108,8 @@
                     </div>
                     <div class="pic category-2">
                         <img src="/Artflix/images/image6.jpg" alt="picture6">
-                    </div>
+                    </div> -->
+                    <?php include("../db/get_list_of_arts.php") ?>
                 </div>
             </div>
         </section>

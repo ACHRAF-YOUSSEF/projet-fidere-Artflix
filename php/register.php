@@ -40,7 +40,7 @@
         </div>        
         <div class="logreg-box">
             <div class="form-box register">
-                <form action="/Artflix/db/register_system.php" method="post">
+                <form enctype="multipart/form-data" action="/Artflix/db/signup_with_mail.php" method="post">
                     <h2>Sign Up</h2>
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-user' ></i></span>
