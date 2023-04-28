@@ -7,12 +7,9 @@
     <title>Sign up</title>
     <link rel="stylesheet" href="/Artflix/css/register_style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
 </head>
 <body>
-
-    <div class="background"></div>
-    
+    <div class="background"></div> 
     <header class="header">
         <nav class="navbar">
             <a href="/Artflix/php/home.php">Home</a>
@@ -25,13 +22,10 @@
             <input type="button" value="search">
         </form>
     </header>
-
     <div class="container">
         <div class="content">
-
             <h2 class="logo"><i class="bx bxs-cart-alt" ></i>
                 Artflix</h2>
-
             <div class="sci">
                 <h2>Welcome!<br><span>To Our New Website.</span> </h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos harum modi velit impedit.</p>
@@ -43,50 +37,36 @@
                     
                 </div>
             </div>
-        </div>
-        
+        </div>        
         <div class="logreg-box">
-            
-            
             <div class="form-box register">
-                <form action="#">
+                <form action="/Artflix/db/register_system.php" method="post">
                     <h2>Sign Up</h2>
-
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-user' ></i></span>
-                        <input type="text" required>
+                        <input type="text" required name="nom">
                         <label>Name</label>
-                    </div>
-                    
+                    </div>                  
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-envelope'></i></span>
-                        <input type="email" required>
+                        <input type="email" required name="email">
                         <label>Email</label>
                     </div>
-
                     <div class="input-box">
                         <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
-                        <input type="password" required>
+                        <input type="password" required name="password">
                         <label>Password</label>
                     </div>
-
                     <div class="remember-forgot">
                         <label>
                             <input type="checkbox">I agree to the terms & conditions
                         </label>
                     </div>
-                    <input type="button" value="Sign Up" class="btn">
-
+                    <input type="submit" value="Sign Up" class="btn">
                     <div class="login-register">
                         <p>Already have any account? <a href="/Artflix/php/login.php" id="login-link">Sign In</a></p>
-
                     </div>
-
-
-
-
-                </form>
-                
+                </form>   
             </div>
         </div>
     </div>

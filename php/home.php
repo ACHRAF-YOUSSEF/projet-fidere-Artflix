@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
         <script src="/Artflix/js/home_script.js" defer></script>
         <title>Artflix</title>
+        <?php include("../db/connection.php") ?>
     </head>
     <body>
         <section id="section1">

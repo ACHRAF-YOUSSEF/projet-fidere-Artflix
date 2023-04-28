@@ -8,6 +8,7 @@
         <script src="https://kit.fontawesome.com/375f585449.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../css/product_style.css">
         <title>Artflix</title>
+        <?php include("../db/connection.php") ?>
     </head>
     <body>
         <section id="section1">

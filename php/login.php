@@ -7,12 +7,9 @@
         <title>Sign in</title>
         <link rel="stylesheet" href="/Artflix/css/login_style.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
     </head>
     <body>
-
-        <div class="background"></div>
-        
+        <div class="background"></div>      
         <header class="header">
             <nav class="navbar">
                 <a href="/Artflix/php/home.php">Home</a>
@@ -25,14 +22,12 @@
                 <input type="button" value="search">
             </form>
         </header>
-
         <section id="section2">
             <div class="container">
             <div class="content">
 
                 <h2 class="logo"><i class="bx bxs-cart-alt" ></i>
                     Artflix</h2>
-
                 <div class="sci">
                     <h2>Welcome!<br><span>To Our New Website.</span> </h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos harum modi velit impedit.</p>
@@ -45,43 +40,31 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="logreg-box">
-                
+            <div class="logreg-box">   
                 <div class="form-box login">
-                    <form action="#">
+                    <form action="../db/login_system.php" method="post">
                         <h2>Sign In</h2>
-                        
                         <div class="input-box">
                             <span class="icon"><i class='bx bxs-envelope'></i></span>
-                            <input type="email" required>
+                            <input type="email" required name="email">
                             <label>Email</label>
                         </div>
-
                         <div class="input-box">
                             <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
-                            <input type="password" required>
+                            <input type="password" required name="password">
                             <label>Password</label>
                         </div>
-
                         <div class="remember-forgot">
                             <label>
                                 <input type="checkbox">Remember me
                             </label>
                             <a href="#">Forgot password?</a>
                         </div>
-                        <input type="button" value="Sign In" class="btn">
-
+                        <input type="submit" value="Sign In" class="btn">
                         <div class="login-registre">
                             <p>Don't have any account? <a href="/Artflix/php/register.php" class="registre-link">Sign up</a></p>
-
                         </div>
-
-
-
-
                     </form>
-                    
                 </div>
                     <!-- <div class="form-box register">
                         <form action="#">
