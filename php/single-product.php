@@ -16,8 +16,8 @@
                 <nav class="navbar">
                     <a href="/Artflix/php/home.php">Home</a>
                     <a href="/Artflix/php/login.php">Account</a>
-                    <a href="">Services</a>
-                    <a href="">Contact</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
                 </nav>
                 <form action="/Artflix/db/search.php" method="get" class="search-bar">
                     <input type="text" name="query" placeholder="Search...">
