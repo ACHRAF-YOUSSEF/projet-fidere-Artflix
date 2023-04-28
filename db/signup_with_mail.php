@@ -60,7 +60,7 @@
             $mail->smtpClose();
     
             header("Location: /Artflix/php/login.php");
-        } catch (Exception $resultat2) {
+        } catch (PDOException $e) {
             echo 'Email existe déja';
         }
     } else {

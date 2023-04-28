@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
         <script src="/Artflix/js/home_script.js" defer></script>
         <title>Artflix</title>
-        <?php include("../db/connection.php") ?>
     </head>
     <body>
         <section id="section1">
@@ -19,9 +18,8 @@
                     <a href="">Services</a>
                     <a href="">Contact</a>
                 </nav>
-                <form action="#" class="search-bar">
-                    <input type="text" placeholder="Search...">
-                    <input type="button" value="search">
+                <form action="/Artflix/db/search.php" method="get" class="search-bar">
+                    <input type="text" name="query" placeholder="Search...">
                 </form>
             </header>
         </section>

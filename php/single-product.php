@@ -19,9 +19,8 @@
                     <a href="">Services</a>
                     <a href="">Contact</a>
                 </nav>
-                <form action="#" class="search-bar">
-                    <input type="text" placeholder="Search...">
-                    <input type="button" value="search">
+                <form action="/Artflix/db/search.php" method="get" class="search-bar">
+                    <input type="text" name="query" placeholder="Search...">
                 </form>
             </header>
         </section>
@@ -29,15 +28,6 @@
         <?php
             include("product_details.php");
         ?>
-
-        <section id="product1" class="section-p1">
-            <h3>Similar:</h3>
-            <div class="pro-container">
-                <!-- <?php
-                    // include("get_similar_product.php");
-                ?> -->
-            </div>
-        </section>
 
         <?php
             include("newsletter.php"); 
