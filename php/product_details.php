@@ -9,7 +9,7 @@
         <!-- <h4><?php //echo htmlspecialchars($product["name"]) ?></h4> -->
         <h4>Size: 24 x 30 inches</h4>
         <!-- <h2>$<?php //echo htmlspecialchars($product["price"]) ?></h2> -->
-        <h2>$50.000.000</h2>
+        <h2>$50 000.00</h2>
         <form action="" method="POST">
             <input type="number" name = "nb" value = "1">
             <button class="normal" name = "add">Add To Cart</button>
