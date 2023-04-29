@@ -6,7 +6,7 @@
     $email_ = $_POST["email"];
     $password_ = $_POST["password"];
 
-    $stmt = $idcon->prepare("SELECT * FROM user WHERE email = :email AND password = :pass");
+    $stmt = $idcon->prepare("SELECT * FROM user0 WHERE email = :email AND password = :pass");
     
     $stmt->bindParam(":email", $email);
     $stmt->bindParam(":pass", $pass);

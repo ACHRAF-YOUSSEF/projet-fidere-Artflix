@@ -3,9 +3,9 @@
 
     try {
     
-        $imagedata = file_get_contents("../images/image2.jpg");
+        $imagedata = file_get_contents("../images/image1.jpg");
 
-        $item = "INSERT INTO item(title, dimention,	price, details, image, category) VALUES(:title, :size, :price, :details, :image_, :category)";
+        $item = "INSERT INTO item0(title, dimention,	price, details, image, category) VALUES(:title, :size, :price, :details, :image_, :category)";
 
         $stmt = $idcon->prepare($item);
 
@@ -16,30 +16,21 @@
         $stmt->bindParam(':image_', $image_, PDO::PARAM_LOB);
         $stmt->bindParam(':category', $category);
 
-        $title = 'Flight of Freedom';
+        $title = 'Hummingbirds';
         $size = '18 x 24';
-        $price = 250.00;
-        $details = "This breathtaking artwork captures the beauty and grace of a flock of birds in flight. Its vibrant colors and sweeping lines make it a stunning centerpiece for any room.";
+        $price = 60.00;
+        $details = "This Displate showcases Martin Johnson Heade's stunning painting 'Hummingbirds,' with its vibrant green foliage and hovering birds. The medium size is perfect for adding a touch of nature-inspired art to a study or bedroom, and the Displate's metal construction ensures it will last for years to come.";
         $image_ = $imagedata;
-        $category = "category-2";
+        $category = "category-1";
         $stmt->execute();
 
-        $imagedata = file_get_contents("../images/image4.jpg");
-        $title = 'Hummingbird Haven';
+        $imagedata = file_get_contents("../images/image5.jpg");
+        $title = 'Blue Tit';
         $size = '18 x 24';
-        $price = 175.00;
-        $details = "This delightful piece showcases the delicate and intricate beauty of the hummingbird. Its soft, muted colors and intricate details make it a charming addition to any decor.";
+        $price = 45.00;
+        $details = "This Displate features Archibald Thorburn's beautiful painting 'Blue Tit,' with its small but colorful bird perched on a branch. The small size is perfect for adding a touch of whimsy to a small wall space, and the Displate's metal construction ensures it will last for years to come.";
         $image_ = $imagedata;
-        $category = "category-2";
-        $stmt->execute();
-
-        $imagedata = file_get_contents("../images/image6.jpg");
-        $title = 'Hummingbird Haven';
-        $size = '18 x 24';
-        $price = 175.00;
-        $details = "This delightful piece showcases the delicate and intricate beauty of the hummingbird. Its soft, muted colors and intricate details make it a charming addition to any decor.";
-        $image_ = $imagedata;
-        $category = "category-2";
+        $category = "category-1";
         $stmt->execute();
         echo"New records created successfully";
     } catch (PDOException $e) {

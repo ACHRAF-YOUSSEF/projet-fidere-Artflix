@@ -5,7 +5,7 @@ d<?php
     $email_ = $_POST["email"];
     $password_ = $_POST["password"];
 
-    $stmt = $idcon->prepare("INSERT INTO user (nom, email, password) VALUES (:nom, :email, :pass)");
+    $stmt = $idcon->prepare("INSERT INTO user0 (nom, email, password) VALUES (:nom, :email, :pass)");
     
     $stmt->bindParam(":nom", $nom);
     $stmt->bindParam(":email", $email);

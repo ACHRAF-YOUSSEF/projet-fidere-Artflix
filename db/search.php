@@ -12,7 +12,7 @@
         $idcon= new PDO("mysql:host=localhost;dbname=artflix", $user, $pass);
         $idcon->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        $stmt = $idcon->prepare("SELECT distinct * FROM item WHERE title LIKE :query");
+        $stmt = $idcon->prepare("SELECT distinct * FROM item0 WHERE title LIKE :query");
 
         $stmt->bindValue(':query', '%' . $query . '%', PDO::PARAM_STR);
 

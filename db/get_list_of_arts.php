@@ -6,7 +6,7 @@
         $idcon= new PDO("mysql:host=localhost;dbname=artflix",$user,$pass);
         $idcon->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        $stmt = $idcon->prepare("select * from item");
+        $stmt = $idcon->prepare("select * from item0");
 
         $stmt->execute();
         

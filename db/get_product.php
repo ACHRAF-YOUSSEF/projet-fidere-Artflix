@@ -7,7 +7,7 @@
             $idcon= new PDO("mysql:host=localhost;dbname=artflix", $user, $pass);
             $idcon->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-            $stmt = $idcon->prepare("SELECT * FROM item WHERE title = :title");
+            $stmt = $idcon->prepare("SELECT * FROM item0 WHERE title = :title");
 
             $stmt->bindParam(":title", $title);
 
